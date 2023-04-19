@@ -23,4 +23,6 @@ You shouldn't take it from me, this guide is based on Discord's documentation.
 
 # Other Resources
 
-- `pycord` - if you want to get a bot running with solid DX, async, rate limiting, etc. - then this is your best option. I hope `minibot` helps you appreciate `pycord` a lot more.
+Of course, `minibot` you probably shouldn't be spending all of your time writing all of your bot logic from scratch. I hope that `minibot` helps you understand and appreciate the neat abstractions created by other projects out there.
+
+- [pycord](https://docs.pycord.dev/) - if you want to get a bot running with solid DX, async, rate limiting, etc. - then this is your best option. 
