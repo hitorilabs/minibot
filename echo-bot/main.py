@@ -1,5 +1,4 @@
-import os
-import json
+import os, json
 from fastapi import FastAPI, Request, Response
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
@@ -26,4 +25,5 @@ async def target(req: Request, res: Response):
 
   data = json.loads(body)
   if data.get("type") == 1: return {"type": 1}
+
   return { "type": 4, "data": { "content": "echo" } }
