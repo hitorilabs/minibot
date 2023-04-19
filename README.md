@@ -1,9 +1,9 @@
 # Overview
-Building a minimum viable Discord bot. In this case, we consider a "bot" to be anything that can listen for things that happen in Discord and respond back.
+Building a minimum viable Discord bot. Listen to events and send messages. 
 
 I don't want to see another thousand line Discord bot template out in the wild with too many external dependencies to count. 
 
-Here are the fundamental building blocks of a **webhook-based (Interaction Endpoint)** Discord bot in **20 lines of Python**.
+A **webhook-based (Interaction Endpoint)** Discord bot in **20 lines of Python**.
 
 For the noobs, check out the wiki page for a [Spelled-out Guide to Your First Discord Bot](https://github.com/hitorilabs/minibot/wiki/Spelled-out-Guide-to-Your-First-Discord-Bot)
 
