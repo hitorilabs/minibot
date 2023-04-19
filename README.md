@@ -13,12 +13,13 @@ For people who might know what's going on, here's what I'm proposing:
 - Handle Discord Verification for the HTTP API (see [docs](https://discord.com/developers/docs/tutorials/upgrading-to-application-commands#adding-an-interactions-endpoint-url))
   - Handle "PING" event
   - Handle signature validation
-- The documentation is quite verbose, these 4 links will tell you everything you need
-  - [Create an Application](https://discord.com/developers/applications)
-  - [Interactions Endpoint Verification Process](https://discord.com/developers/docs/tutorials/upgrading-to-application-commands#adding-an-interactions-endpoint-url)
-  - [Implement Signature Validation](https://discord.com/developers/docs/interactions/receiving-and-responding#security-and-authorization)
-  - [Registering Commands](https://discord.com/developers/docs/interactions/application-commands#registering-a-command)
-  - [Interaction Response Format](https://discord.com/developers/docs/interactions/receiving-and-responding#responding-to-an-interaction)
+
+You shouldn't take it from me, this guide is based on Discord's documentation.
+- [Create an Application](https://discord.com/developers/applications)
+- [Interactions Endpoint Verification Process](https://discord.com/developers/docs/tutorials/upgrading-to-application-commands#adding-an-interactions-endpoint-url)
+- [Implement Signature Validation](https://discord.com/developers/docs/interactions/receiving-and-responding#security-and-authorization)
+- [Registering Commands](https://discord.com/developers/docs/interactions/application-commands#registering-a-command)
+- [Interaction Response Format](https://discord.com/developers/docs/interactions/receiving-and-responding#responding-to-an-interaction)
 ---
 # FAQ
 ## Plain Webhooks 
