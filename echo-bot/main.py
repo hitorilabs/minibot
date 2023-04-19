@@ -4,15 +4,14 @@ from fastapi import FastAPI, Request, Response
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-PUBLIC_KEY      = os.getenv("MINIAPP_PUBLIC_KEY")
-
+PUBLIC_KEY = os.getenv("MINIAPP_PUBLIC_KEY")
 
 app = FastAPI()
 
 @app.post("/")
 async def target(req: Request, res: Response):
-  # Your public key can be found on your application in the Developer Portal
 
+  # Your public key can be found on your application in the Developer Portal
   verify_key = VerifyKey(bytes.fromhex(PUBLIC_KEY))
 
   signature = req.headers["X-Signature-Ed25519"]
