@@ -20,3 +20,7 @@ You shouldn't take it from me, this guide is based on Discord's documentation.
 - [Implement Signature Validation](https://discord.com/developers/docs/interactions/receiving-and-responding#security-and-authorization)
 - [Registering Commands](https://discord.com/developers/docs/interactions/application-commands#registering-a-command)
 - [Interaction Response Format](https://discord.com/developers/docs/interactions/receiving-and-responding#responding-to-an-interaction)
+
+# Other Resources
+
+- `pycord` - if you want to get a bot running with solid DX, async, rate limiting, etc. - then this is your best option. I hope `minibot` helps you appreciate `pycord` a lot more.
