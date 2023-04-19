@@ -19,20 +19,22 @@ When a user interacts with your app, your app will receive an Interaction. Your 
 1. Interaction Create Gateway Event
 2. Outgoing Webhook
 
-
+## Interaction Create Gateway Event (Gateway API) vs. Outgoing Webhook (HTTP API)
 These two methods are mutually exclusive; you can only receive Interactions one of the two ways. The INTERACTION_CREATE Gateway Event may be handled by connected clients, while the webhook method detailed below does not require a connected client.
 
-In your application in the Developer Portal, there is a field on the main page called "Interactions Endpoint URL". If you want to receive Interactions via outgoing webhook, you can set your URL in this field. In order for the URL to be valid, you must be prepared for two things ahead of time:
+- The Gateway API lets apps open secure WebSocket connections with Discord to receive events 
+- The Interactions Endpoint is a regular HTTP API webhook
+
+Not all applications have a use case for WebSockets, but you'll know when you need it. Out of scope for this repository.
+
+## The Beauty of Discord's Webhook Verification
+
+Normally, you can easily shoot yourself in the foot if you don't implement signature validation. Most apps don't even bother to stop you, but Discord actually cared enough to protect you.
 
 - Your endpoint must be prepared to ACK a PING message
 - Your endpoint must be set up to properly handle signature headers--more on that in Security and Authorization
 
-
-[Discord Docs](https://discord.com/developers/docs/topics/oauth2#bots)
-
-- Discord's API provides a separate type of user account dedicated to automation
-- Bot accounts can be created through the applications page, and are authenticated using a token (rather than a username and password) [...]
-- Unlike the normal OAuth2 flow, bot accounts have full access to most API routes without using bearer tokens, and can connect to the Real Time Gateway. Automating normal user accounts (generally called "self-bots") outside of the OAuth2/bot API is forbidden, and can result in account termination if found.
+## Bots vs. Users
 
 Bot accounts have a few differences in comparison to normal user accounts, namely:
 
